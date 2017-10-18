@@ -1,0 +1,17 @@
+dependencies:
+  - name: jquery
+    version: 3.2.1
+    src: htmlwidgets/lib/jquery
+    script: jquery.min.js
+  - name: pdf
+    version: 0.0.1
+    src: htmlwidgets/lib/pdf
+    script: pdf.js
+  - name: pdf_worker
+    version: 0.0.1
+    src: htmlwidgets/lib/pdf_worker
+    script: pdf.worker.js
+  - name: rpdf_widget
+    version: 0.0.1
+    src: htmlwidgets/lib/rpdf_widget
+    stylesheet: rpdf.css
