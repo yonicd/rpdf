@@ -2,10 +2,32 @@
 % Please edit documentation in R/rpdf.R
 \name{rpdf}
 \alias{rpdf}
-\title{<Add Title>}
+\title{View pdf files in R}
 \usage{
-rpdf(path, scale = 1, width = NULL, height = NULL, elementId = NULL)
+rpdf(path, scale = 1, startpage = 1, width = NULL, height = NULL,
+  elementId = NULL)
+}
+\arguments{
+\item{path}{character, remote location of file}
+
+\item{scale}{numeric, initial zoom factor Default: 1}
+
+\item{startpage}{numeric, page to open viewer, Default: 1}
+
+\item{width, height}{Must be a valid CSS unit (like \code{'100\%'},
+\code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
+string and have \code{'px'} appended.}
+
+\item{elementId}{The input slot that will be used to access the element.}
+}
+\value{
+nothing
 }
 \description{
-<Add Description>
+Htmlwidget to view pdf files in R
+}
+\examples{
+if(interactive()){
+rpdf(path = 'http://www.pdf995.com/samples/pdf.pdf',scale=0.75)
+ }
 }

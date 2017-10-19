@@ -3,4 +3,4 @@
 export(renderRpdf)
 export(rpdf)
 export(rpdfOutput)
-import(htmlwidgets)
+importFrom(htmlwidgets,createWidget)

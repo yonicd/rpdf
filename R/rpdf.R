@@ -1,16 +1,27 @@
-#' <Add Title>
-#'
-#' <Add Description>
-#'
-#' @import htmlwidgets
-#'
+#' @title View pdf files in R
+#' @description Htmlwidget to view pdf files in R
+#' @param path character, remote location of file
+#' @param scale numeric, initial zoom factor Default: 1
+#' @param startpage numeric, page to open viewer, Default: 1
+#' @param width,height Must be a valid CSS unit (like \code{'100\%'},
+#'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
+#'   string and have \code{'px'} appended.
+#' @param elementId The input slot that will be used to access the element.
+#' @return nothing
+#' @examples
+#' if(interactive()){
+#' rpdf(path = 'http://www.pdf995.com/samples/pdf.pdf',scale=0.75)
+#'  }
+#' @rdname rpdf
 #' @export
-rpdf <- function(path, scale = 1, width = NULL, height = NULL, elementId = NULL) {
+#' @importFrom htmlwidgets createWidget
+rpdf <- function(path, scale = 1, startpage = 1, width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
     path = path,
-    scale=scale
+    scale=scale,
+    startpage=startpage
   )
 
   # create widget
