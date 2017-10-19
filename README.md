@@ -1,2 +1,4 @@
 # rpdf
-pdf.js htmlwidget for R
+Mozilla pdf.js htmlwidget for R
+
+![](https://github.com/yonicd/jsTree/blob/master/miscellaneous/init.gif?raw=true)
