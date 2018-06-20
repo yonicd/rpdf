@@ -10,7 +10,7 @@ Description: View PDF files in R  using the 'pdf' <https://github.com/mozilla/pd
     directly from the R console, from 'RStudio', in Shiny apps and R Markdown documents.
 Depends: R (>= 3.4.1)    
 Imports: htmlwidgets
-License: GPL (>= 3)
+License: GPL-2 | GPL-3
 URL: https://github.com/yonicd/rpdf
 BugReports: https://github.com/yonicd/rpdf/issues
 LazyData: false
