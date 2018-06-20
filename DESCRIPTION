@@ -8,7 +8,7 @@ Maintainer: Jonathan Sidi <yonicd@gmail.com>
 Description: View PDF files in R  using the 'pdf' <https://github.com/mozilla/pdf.js>
     JavaScript library and the 'htmlwidgets' package. Can be used
     directly from the R console, from 'RStudio', in Shiny apps and R Markdown documents.
-Depends: R (>= 3.4.1)    
+Depends: R (>= 2.3.0)
 Imports: htmlwidgets
 License: GPL-2 | GPL-3
 URL: https://github.com/yonicd/rpdf
